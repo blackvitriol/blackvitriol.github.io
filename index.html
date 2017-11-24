@@ -21,6 +21,23 @@
   Your browser does not support the audio element.
 </audio> 
 
+<canvas id="myCanvas" width="device-width" height="10" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+ctx.font = "30px Arial";
+ctx.fillText("Hello World",10,50);
+</script>
+
 		<!-- Header -->
 			<section id="header">
 				<div class="inner">
@@ -40,14 +57,14 @@
 					<div class="row 150%">
 						<div class="6u 12u$(medium)">
 							<header class="major">
-								<h2>Introduction<br />
+								<h2>Introduction/<br />
 								Personal Life</h2>
 							</header>
-							<p>If you have taken the time to read this, I am grateful for your interest. Please, do not mind my humor. There exists something known as "Professional Humor" (or does it?) 🤷‍♂️</p>
+							<p>Thank you for your interest ! Please, do not mind my sense of humor. 🤷‍♂️</p>
 
-<p>My name is <b>Ahmad</b>, and I am a <b>computer scientist</b> and a <b>robotics engineer</b>. The titles that you have read, these are not titles that I have selected myself, rather, they have been inferred upon me by the completion of my formal education and the acquisition of a wide spectrum of skillset that allows me to make this claim. I love my work which is why I take pride in it and I have been working with computers, since the age of 3 ! Growing up in Dubai, I have been tech-savvy, trying to hack and reverse engineer anything I could find. 
+<p>My name is <b>Ahmad</b>, and I am a <b>computer scientist</b> and a <b>robotics engineer</b>. The titles that you have read, these are not titles that I have selected myself, rather, they have been inferred upon me by the completion of my formal education and the acquisition of a wide spectrum of skillset that allows me to make this claim. I love my work which is why I take pride in it. I have been working with computers, since the age of 3 ! Growing up in Dubai, I have always been tech-savvy, trying to hack and reverse engineer anything I could find. 
 
-<p>👨‍🎓 My higher education was based on Information and Communication Technology, and Mathematics. This was followed by a Bachelors degree in <i>Computer Science</i> from Troy State University in Alabama, USA. Fast-Forward. Currently, I am on the verge of completing my thesis, in a Masters programme of 'Robotics and Intelligent Machine Engineering' from National University of Science and Technology in Islamabad, Pakistan.</p>
+<p>👨‍🎓 My higher education was based on <i>Information and Communication Technology, and Mathematics </i>. This was followed by a Bachelors degree in <i>Computer Science</i> from Troy State University in Alabama, USA. Fast-Forward. Currently, I am on the verge of completing my thesis, in a Masters programme of <i> 'Robotics and Intelligent Machine Engineering' </i> from National University of Science and Technology in Islamabad, Pakistan.</p>
 </p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
@@ -73,22 +90,35 @@
 						</div>
 						<div class="6u$ 12u$(medium)">
 							<header class="major">
-								<h2>Artificial Intelligence<br />
-								Robotics</h2>
+								<h2>Artificial Intelligence/<br />
+								Machine Learning</h2>
 							</header>
-							<p>Okay, that was a long intro... Here are the things that you were looking for... </p>
+							<p>Okay, that was a long intro... Here are the technical skills that you were looking for... </p>
 							
 							
 							<p> I have always been interested in human intelligence. 🙇 Using introspection, I have modelled my own cognition and metacognition into the framework of a cognitive architecture. I have coupled this with reading Philosophy, research in Computational Neuroscience and Cognitive Psychology. Ultimately, it has led me to my passion of developing Artificial General Intelligence.</p>
-							<p>My current works consists of: <br />
-- Working on Reinforcement Learning algorithms for decision making. (Q-Learning) <br />
-- Using OpenCV to develop 'Perception' for AGI agents, using traditional vision methods and ML <br />
+							<p>I am currently working on: <br />
+							
+							<p><b>Artificial Intelligence: </b><br />
+- Working on RL algorithms for decision-making. (Q-Learning) <br />
+- Using OpenCV to develop 'Perception' for AGI agents, using traditional vision methods and ML.<br />
+- Semantic, multi-level representation for 'Perception' within an agent's memory.
 - Developing a dynamic Knowledge Representation and Reasoning module using Hypergraphs.
+- Genetic/Evolutionary Algorithm approach to converge on solutions.
+- Under Work: Single AGI agent to work on all OpenAI Gym and Universe challenges
  </p>
-							<p>Robotics Work: <br />
+							<p><b>Machine Learning: </b><br />
+- Experience-based string generation using LSTM cell in RNNs <br />
+- Real-time object detection using TensorFlow<br />
+- Developed a novel architecture for Image classification using CNNs<br />
+- Under work: Capture body language and facial expressions and correlation with language</p>
+						</div>
+							
+							<p><b>Robotics: </b><br />
 - Nao v5 (Physical/Simulated): behaviour planning, SLAM <br />
 - Reem-C (Simulated): developing cogntive behaviour<br />
-- Using ROS and Gazebo to make simulated robots<br /></p>
+- Using ROS and Gazebo to make simulated robots<br />
+- Research for construction of biologically inspired humanoids</p>
 						</div>
 					</div>
 				</div>
