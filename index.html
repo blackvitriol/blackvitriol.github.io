@@ -16,27 +16,27 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
- <audio autoplay>
-  <source src="RNN-RBM.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio> 
+		<audio autoplay>
+		<source src="RNN-RBM.mp3" type="audio/mp3">
+		Your browser does not support the audio element.
+		</audio> 
 
-<canvas id="myCanvas" width="device-width" height="10" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+		<canvas id="myCanvas" width="device-width" height="200"></canvas>
 
-<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-// Create gradient
-var grd = ctx.createLinearGradient(0,0,200,0);
-grd.addColorStop(0,"red");
-grd.addColorStop(1,"white");
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,150,80);
-ctx.font = "30px Arial";
-ctx.fillText("Hello World",10,50);
-</script>
+		<script>
+		  var canvas = document.getElementById("myCanvas");
+		  var ctx = canvas.getContext('2d');
+		  ctx.shadowColor = "rgb(190, 190, 190)";
+		  ctx.shadowOffsetX = 10;
+		  ctx.shadowOffsetY = 10
+		  ctx.shadowBlur = 10;
+		  ctx.font = "30px arial";
+		  var gradient = ctx.createLinearGradient(0, 0, 150, 100);
+		  gradient.addColorStop(0, "rgb(255, 0, 128)");
+		  gradient.addColorStop(1, "rgb(255, 153, 51)");
+		  ctx.fillStyle = gradient;
+		  ctx.fillText("Text Effects", 10, 50);
+		</script>
 
 		<!-- Header -->
 			<section id="header">
@@ -95,8 +95,8 @@ ctx.fillText("Hello World",10,50);
 							<p>Okay, that was a long intro... Here are the technical skills that you were looking for... </p>
 							
 							
-							<p> I have always been interested in human intelligence. 🙇 Using introspection, I have modelled my own cognition and metacognition into the framework of a cognitive architecture. I have coupled this with reading Philosophy, research in Computational Neuroscience and Cognitive Psychology. Ultimately, it has led me to my passion of developing Artificial General Intelligence.</p><br />
-							I am currently working on: 
+							<p> I have always been interested in human intelligence. 🙇 Using introspection, I have modelled my own cognition and metacognition into the framework of a cognitive architecture. I have coupled this with reading Philosophy, research in Computational Neuroscience and Cognitive Psychology. Ultimately, it has led me to my passion of developing Artificial General Intelligence.</p>
+							<h3>I am currently working on: </h3>
 							
 							<p><b>Artificial Intelligence: </b><br />
 - Working on RL algorithms for decision-making. (Q-Learning) <br />
