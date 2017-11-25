@@ -21,24 +21,6 @@
 		Your browser does not support the audio element.
 		</audio> 
 
-
-		<canvas id="myCanvas" width="822" height="20"></canvas>
-
-		<script>
-		  var canvas = document.getElementById("myCanvas");
-		  var ctx = canvas.getContext('2d');
-		  ctx.shadowColor = "rgb(190, 190, 190)";
-		  ctx.shadowOffsetX = 7;
-		  ctx.shadowOffsetY = 7
-		  ctx.shadowBlur = 10;
-		  ctx.font = "12px arial";
-		  var gradient = ctx.createLinearGradient(0, 0, 150, 100);
-		  gradient.addColorStop(0, "rgb(255, 0, 128)");
-		  gradient.addColorStop(1, "rgb(255, 153, 51)");
-		  ctx.fillStyle = gradient;
-		  ctx.fillText("🎵 The background music has been generated artificially by a RNN-RBM algorithm.", 400, 18);
-		</script>
-
 		<!-- Header -->
 			<section id="header">
 				<div class="inner">
